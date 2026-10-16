@@ -1,0 +1,10 @@
+# Dependencies
+node_modules/
+
+# Playwright temporary artifacts (screenshots/videos/traces of the last run)
+test-results/
+blob-report/
+playwright/.cache/
+
+# NOTE: playwright-report/ and reports/ are intentionally NOT ignored,
+# because the exam requires committing the HTML/JSON reports.
