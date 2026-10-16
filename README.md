@@ -1,4 +1,4 @@
-# Final Exam — Software Testing with Playwright (SauceDemo)
+# Final-6804101377 (thank you c with me)
 - **ผู้ส่ง:** `วรวรรธน์ เจริญวงค์` รหัสนักศึกษา `6804101377` 
 - **ระบบที่ทดสอบ:** https://www.saucedemo.com/
 - **เครื่องมือ:** Playwright Test 1.64 + TypeScript (Chromium)
