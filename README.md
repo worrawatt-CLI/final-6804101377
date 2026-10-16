@@ -1,8 +1,8 @@
 # Final Exam — Software Testing with Playwright (SauceDemo)
-- **ผู้ส่ง:** `ชื่อ-นามสกุล` รหัสนักศึกษา `6804101377` *(แก้ไขเป็นข้อมูลจริง)*
+- **ผู้ส่ง:** `วรวรรธน์ เจริญวงค์` รหัสนักศึกษา `6804101377` 
 - **ระบบที่ทดสอบ:** https://www.saucedemo.com/
 - **เครื่องมือ:** Playwright Test 1.64 + TypeScript (Chromium)
-- **Repository:** `final-<รหัสนักศึกษา>`
+- **Repository:** `final-6804101377`
 
 ## โครงสร้างโปรเจกต์
 
@@ -17,11 +17,11 @@ final-exam/
 │   ├── integration/ IT-01.spec.ts, IT-02.spec.ts
 │   └── system/      ST-01.spec.ts, ST-02.spec.ts
 ├── scripts/
-│   ├── run-all.mjs        # รันเทสต์แล้วสร้าง summary เสมอ (แม้มี Failed)
-│   └── make-summary.mjs   # สร้าง reports/test-summary.md จาก reports/results.json
-├── setup-windows.ps1 / setup-windows.bat / setup.sh   # ติดตั้งอัตโนมัติ
+│   ├── run-all.mjs        
+│   └── make-summary.mjs   
+├── setup-windows.bat
 ├── playwright-report/     # HTML Report (สร้างหลังรัน)
-└── reports/               # results.json + test-summary.md (สร้างหลังรัน)
+└── reports/               # results.json + test-summary.md 
 ```
 
 ## วิธีติดตั้งและรัน (Windows 11)
@@ -62,10 +62,6 @@ final-exam/
 | Cart Badge และหน้า Shopping Cart | **REAL** | เพิ่ม Backpack + Bike Light จริง ตรวจ Badge = 2 และรายการใน `cart.html` |
 
 แนวคิด Bottom-Up: ทดสอบโมดูลชั้นล่าง (Inventory → Cart) ซึ่งเป็นของจริงก่อน โดยใช้ **Driver** ทำหน้าที่แทนโมดูลชั้นบน (Login) ที่ยังไม่ถูกนำมารวม — Driver "เรียกใช้" โมดูลล่างพร้อมเตรียมสถานะที่ต้องการ (session cookie) และเมื่อจบการทดสอบจะปิด `BrowserContext` ที่สร้างเองใน `finally`
-
-## หมายเหตุเชิงวิชาการ
-
-บทที่ 1 เป็นการทดสอบ UI แบบ Black-box ผ่าน Browser จึงเป็น UI Component / Functional Testing ไม่ใช่ Unit Testing ของฟังก์ชันภายในโดยตรง เพราะไม่สามารถเข้าถึง Source Code ภายในของ SauceDemo
 
 ## รายงานผล
 
